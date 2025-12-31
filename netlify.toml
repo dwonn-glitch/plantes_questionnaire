@@ -1,1 +1,8 @@
+[build]
+  publish = "."          # root folder contains index.html
+  command = "npm run build"   # omit if you have no build step
 
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
