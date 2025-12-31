@@ -1,0 +1,11 @@
+Plantes-questionnaire/
+|-index.html #page principale, charge l'UI
+
+Questionnaire UI
+|-syte.css #styling optionnel
+|- script.js #javascript qui montrent les qauestions et enregistre les reponses dans /api/save
+|
+|-netlify/
+│   └─ functions/
+│        save.js       # Netlify Function (Node) that receives the data
+└─ netlify.toml        # optional config (can be omitted for simple sites)
